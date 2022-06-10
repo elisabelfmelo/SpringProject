@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class DigUnico{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in)
+
+    System.out.println("Informe um número: ")
     
     int  n = scanner.scanner.nextInt();
     int soma = 0;
