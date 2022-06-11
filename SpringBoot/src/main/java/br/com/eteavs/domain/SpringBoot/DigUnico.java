@@ -1,31 +1,20 @@
 package br.com.eteavs.domain.SpringBoot;
-
 import java.util.Scanner;
 
-public class DigUnico{
+public class DigUnico {
   public static void main(String[] args){
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Informe um número: ");
+	Scanner scanner = new Scanner(System.in);
+    System.out.print("Digite um número: ");
+    int  input = scanner.nextInt();
+    Integer resultado = 0;
     
-    int  n = scanner.nextInt();
-    int soma = 0;
-
-    while (n !=0){
-      int digito = n %10;
-      System.out.println(digito);
-
-      if(digito%2==0){
-        soma +=digito;
-      }
-      n  =n/10;
-    }
-    scanner.close();
-
-    System.out.println("Digito = "+ "digito");
+    while (input != 0){
+    resultado  = resultado + input % 10;
+    input = input/10;
+}
 
  
-    
+    System.out.println("Digito = "+ resultado);    
     
   }
 }
